@@ -12,6 +12,9 @@ import { StaticQuery, graphql } from "gatsby"
 import Header from "./header"
 import "./layout.css"
 
+const myExtScript = require('../assets/js/jquery.min.js')  
+const myExtScript1 = require('../assets/js/main.min.js')  
+
 const Layout = ({ children }) => (
   <StaticQuery
     query={graphql`
@@ -26,7 +29,7 @@ const Layout = ({ children }) => (
     render={data => (
       <>
         <Header siteTitle={data.site.siteMetadata.title} />
-        <div
+        {/* <div
           style={{
             margin: `0 auto`,
             maxWidth: 960,
@@ -34,13 +37,15 @@ const Layout = ({ children }) => (
             paddingTop: 0,
           }}
         >
-          <main>{children}</main>
+          <main> */}
+          {children}
+          {/* </main>
           <footer>
             © {new Date().getFullYear()}, Built with
             {` `}
             <a href="https://www.gatsbyjs.org">Gatsby</a>
           </footer>
-        </div>
+        </div> */}
       </>
     )}
   />
