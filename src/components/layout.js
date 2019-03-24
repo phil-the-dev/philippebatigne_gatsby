@@ -12,9 +12,6 @@ import { StaticQuery, graphql } from "gatsby"
 import Header from "./header"
 import "./layout.css"
 
-const myExtScript = require('../assets/js/jquery.min.js')  
-const myExtScript1 = require('../assets/js/main.min.js')  
-
 const Layout = ({ children }) => (
   <StaticQuery
     query={graphql`
@@ -38,8 +35,8 @@ const Layout = ({ children }) => (
           }}
         >
           <main> */}
-          {children}
-          {/* </main>
+        {children}
+        {/* </main>
           <footer>
             © {new Date().getFullYear()}, Built with
             {` `}

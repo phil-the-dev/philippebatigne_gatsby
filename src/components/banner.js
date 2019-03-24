@@ -1,4 +1,5 @@
 import React from "react"
+import ReactFitText from 'react-fittext'
 
 const Banner = () => (
   <section id="intro">
@@ -6,7 +7,9 @@ const Banner = () => (
     <div class="intro-content">
       <div class="row">
         <div class="col-twelve">
-          <h1>Hi, I'm Philippe Batigne.</h1>
+          <ReactFitText>
+            <h1>Hi, I'm Philippe Batigne.</h1>
+          </ReactFitText>
           <h5>pronounced "fill-leap" "bat-teen"</h5>
           <p class="intro-position">
             <span>Full Stack Web Developer</span>
