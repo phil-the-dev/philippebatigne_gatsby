@@ -1,4 +1,24 @@
 import React from "react"
+import Masonry from 'react-masonry-component';
+const imagesLoadedOptions = {
+  itemSelector: '.folio-item',
+  resize: true
+}
+
+const FolioItem = ({imgSrc, imgAlt, id, title}) => (
+  <div class="bgrid folio-item">
+    <div class="item-wrap">
+      <img src={imgSrc} alt={imgAlt} />
+      <a href={"#"+id} class="overlay">
+        <div class="folio-item-table">
+          <div class="folio-item-cell">
+            <h3 class="folio-title">{title}</h3>
+          </div>
+        </div>
+      </a>
+    </div>
+  </div>
+)
 
 const PortfolioSection = () => (
   <section id="portfolio">
@@ -12,42 +32,11 @@ const PortfolioSection = () => (
     <div class="row portfolio-content">
       <div class="col-twelve">
         <div id="folio-wrapper" class="block-1-2 block-mob-full stack">
-          <div class="bgrid folio-item">
-            <div class="item-wrap">
-              <img src="images/watchandchill.gif" alt="WatchAndChill.com" />
-              <a href="#watchandchill" class="overlay">
-                <div class="folio-item-table">
-                  <div class="folio-item-cell">
-                    <h3 class="folio-title">WatchAndChill.com</h3>
-                  </div>
-                </div>
-              </a>
-            </div>
-          </div>
-          <div class="bgrid folio-item">
-            <div class="item-wrap">
-              <img src="images/conkraken.png" alt="Coming Soon" />
-              <a href="#comicbook" class="overlay">
-                <div class="folio-item-table">
-                  <div class="folio-item-cell">
-                    <h3 class="folio-title">Con Kraken</h3>
-                  </div>
-                </div>
-              </a>
-            </div>
-          </div>
-          <div class="bgrid folio-item">
-            <div class="item-wrap">
-              <img src="images/sites/vanburen.PNG" alt="" />
-              <a href="#vanburen" class="overlay">
-                <div class="folio-item-table">
-                  <div class="folio-item-cell">
-                    <h3 class="folio-title">Van Buren</h3>
-                  </div>
-                </div>
-              </a>
-            </div>
-          </div>
+        <Masonry imagesLoadedOption={imagesLoadedOptions}>
+          <FolioItem imgSrc='images/watchandchill.gif' imgAlt='WatchAndChill.com' id="watchandchill" title="WatchAndChill.com" />
+          <FolioItem imgSrc='images/conkraken.png' imgAlt='Coming Soon' id="comicbook" title="Con Kraken" />
+          <FolioItem imgSrc='images/sites/vanburen.PNG' imgAlt='' id="vanburen" title="Van Buren" />
+        </Masonry>
           <div id="watchandchill" class="popup-modal slider mfp-hide">
             <div class="media">
               <img src="images/watchandchill.gif" alt="" />
