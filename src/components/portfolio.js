@@ -1,5 +1,8 @@
 import React from "react"
 import Masonry from 'react-masonry-component';
+import Img from "gatsby-image";
+import { StaticQuery, graphql,  } from "gatsby";
+
 const imagesLoadedOptions = {
   itemSelector: '.folio-item',
   resize: true
@@ -8,7 +11,7 @@ const imagesLoadedOptions = {
 const FolioItem = ({imgSrc, imgAlt, id, title}) => (
   <div class="bgrid folio-item">
     <div class="item-wrap">
-      <img src={imgSrc} alt={imgAlt} />
+      <Img fluid={imgSrc} alt={imgAlt} />
       <a href={"#"+id} class="overlay">
         <div class="folio-item-table">
           <div class="folio-item-cell">
@@ -20,7 +23,8 @@ const FolioItem = ({imgSrc, imgAlt, id, title}) => (
   </div>
 )
 
-const PortfolioSection = () => (
+const PortfolioSection = (props) => {
+  return ( 
   <section id="portfolio">
     <div class="row section-intro">
       <div class="col-twelve">
@@ -33,9 +37,30 @@ const PortfolioSection = () => (
       <div class="col-twelve">
         <div id="folio-wrapper" class="block-1-2 block-mob-full stack">
         <Masonry imagesLoadedOption={imagesLoadedOptions}>
-          <FolioItem imgSrc='images/watchandchill.gif' imgAlt='WatchAndChill.com' id="watchandchill" title="WatchAndChill.com" />
-          <FolioItem imgSrc='images/conkraken.png' imgAlt='Coming Soon' id="comicbook" title="Con Kraken" />
-          <FolioItem imgSrc='images/sites/vanburen.PNG' imgAlt='' id="vanburen" title="Van Buren" />
+        <StaticQuery
+          query={graphql`
+          query {
+            allMarkdownRemark(sort: { order: DESC, fields: [frontmatter___title] }) {
+              edges {
+                node {
+                  frontmatter {
+                    title,
+                    image 
+                  }
+                }
+              }
+            }
+          }
+          `}
+          render={data => console.log(data)
+          // <FolioItem imgSrc={data.edges.node.frontmatter.image.childImageSharp.fluid} imgAlt='stuff' id="i" title={data.edges.node.frontmatter.title} />
+          }
+        />
+        {/* {postList.edges.map(({ node }, i) => (
+          // <FolioItem imgSrc='images/' imgAlt='WatchAndChill.com' id="watchandchill" title="WatchAndChill.com" />
+          // <FolioItem imgSrc='' imgAlt='Coming Soon' id="comicbook" title="Con Kraken" />
+          <FolioItem imgSrc={node.frontmatter.image.childImageSharp.fluid} imgAlt='stuff' id="i" title={node.frontmatter.title} key={i} />
+        ))} */}
         </Masonry>
           <div id="watchandchill" class="popup-modal slider mfp-hide">
             <div class="media">
@@ -110,6 +135,30 @@ const PortfolioSection = () => (
       </div>
     </div>
   </section>
-)
+  )
+}
 
 export default PortfolioSection;
+
+export const listQuery = graphql`
+  query ListQuery {
+    allMarkdownRemark(sort: { order: DESC, fields: [frontmatter___title] }) {
+      edges {
+        node {
+          frontmatter {
+            title,
+            image 
+          }
+        }
+      }
+    }
+  }
+  `
+
+  // {
+  //   childImageSharp {
+  //     fluid(maxWidth: 786) {
+  //       ...GatsbyImageSharpFluid
+  //     }
+  //   }
+  // }
