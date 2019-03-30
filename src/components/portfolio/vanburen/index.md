@@ -1,4 +1,4 @@
 ---
 title: Van Buren
-image: vanburen.PNG
+image: ./vanburen.PNG
 ---

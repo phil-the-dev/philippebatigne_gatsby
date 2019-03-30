@@ -1,4 +1,4 @@
 ---
 title: ConKraken
-image: conkraken.png
+image: ./conkraken.png
 ---

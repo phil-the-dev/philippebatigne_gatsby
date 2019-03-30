@@ -1,4 +1,4 @@
 ---
 title: Watch And Chill
-image: watchandchill.gif
+image: ./watchandchill.png
 ---

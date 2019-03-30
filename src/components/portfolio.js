@@ -45,15 +45,29 @@ const PortfolioSection = (props) => {
                 node {
                   frontmatter {
                     title,
-                    image 
+                    image {
+                      childImageSharp {
+                        resize(width: 1500, height: 1500) {
+                          src
+                        }
+                        fluid(maxWidth: 786) {
+                          ...GatsbyImageSharpFluid
+                        }
+                      }
+                    }
                   }
                 }
               }
             }
           }
           `}
-          render={data => console.log(data)
-          // <FolioItem imgSrc={data.edges.node.frontmatter.image.childImageSharp.fluid} imgAlt='stuff' id="i" title={data.edges.node.frontmatter.title} />
+          render={data => 
+            data.allMarkdownRemark.edges.map(function(element,index){
+              let item = element.node.frontmatter;
+              console.log('item', item, index);
+
+              return (<FolioItem imgSrc={item.image.childImageSharp.fluid} imgAlt={item.title} id="i" title={item.title} />)
+            })
           }
         />
         {/* {postList.edges.map(({ node }, i) => (
@@ -140,20 +154,20 @@ const PortfolioSection = (props) => {
 
 export default PortfolioSection;
 
-export const listQuery = graphql`
-  query ListQuery {
-    allMarkdownRemark(sort: { order: DESC, fields: [frontmatter___title] }) {
-      edges {
-        node {
-          frontmatter {
-            title,
-            image 
-          }
-        }
-      }
-    }
-  }
-  `
+// export const listQuery = graphql`
+//   query ListQuery {
+//     allMarkdownRemark(sort: { order: DESC, fields: [frontmatter___title] }) {
+//       edges {
+//         node {
+//           frontmatter {
+//             title,
+//             image 
+//           }
+//         }
+//       }
+//     }
+//   }
+//   `
 
   // {
   //   childImageSharp {
