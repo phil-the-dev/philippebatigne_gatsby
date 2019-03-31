@@ -1,7 +1,12 @@
 import React from 'react'
+import { library } from '@fortawesome/fontawesome-svg-core'
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
+import { faBriefcase, faGraduationCap } from '@fortawesome/free-solid-svg-icons'
+library.add(faBriefcase);
+library.add(faGraduationCap);
 
 const ResumeSection = () => (
-    <section id="resume" class="grey-section">
+  <section id="resume" class="grey-section">
     <div class="row section-intro">
       <div class="col-twelve">
         <h5>Resume</h5>
@@ -16,45 +21,46 @@ const ResumeSection = () => (
       <div class="col-twelve">
         <div class="timeline-wrap">
           <div class="timeline-block">
-              <div class="timeline-ico">
-                <i class="fa fa-briefcase"></i>
-              </div>
-              <div class="timeline-header">
-                <h3>Ruby on Rails Developer</h3>
-                <p>November 2017 - present</p>
-              </div>
-              <div class="timeline-content">
-                <h4>Space Telescope Science Institute</h4>
-                <p>
-                  I'm the main developer for a <mark>Ruby on Rails</mark> web app called <a href="https://viewspace.org">ViewSpace</a>. I help with the product owners and stakeholders to build out features and create workable solutions to their problems. I also semi-project manage the project with the product owner since there is no central project manager role. The web app uses <mark>Bootstrap 3</mark> to create all the views that are written in <mark>HAML</mark>. I use <mark>JavaScript</mark> and <mark>jQuery</mark> as well for most of the front end interactions, along with some <mark>CSS3</mark> transtitions to make the site snappy and snazzy. I'm also using <mark>capybara</mark> to write tests for my models, views, and overall functionality.
-                </p>
-              </div>
+            <div class="timeline-ico">
+              <i class="fa fa-briefcase"></i>
+              <FontAwesomeIcon icon="briefcase" />
             </div>
-            <div class="timeline-block">
-              <div class="timeline-ico">
-                <i class="fa fa-briefcase"></i>
-              </div>
-              <div class="timeline-header">
-                <h3>Informatica Developer/Tester <br/><small>(as a consultant from Sogeti)</small></h3>
-                <p>July 2017 - November 2017</p>
-              </div>
-              <div class="timeline-content">
-                <h4>T. Rowe Price</h4>
-                <p>
-                  I rigorously test other
-                  <mark>Informatica</mark> Developers' mappings and workflows using hand written
-                  <mark>SQL</mark> scripts to make sure they followed the technical specifications as the client specified. I also
-                  learned Informatica to create and run my own
-                  <mark>ETL</mark> mappings and workflows that complied with the technical specifications given by the client.
+            <div class="timeline-header">
+              <h3>Ruby on Rails Developer</h3>
+              <p>November 2017 - present</p>
+            </div>
+            <div class="timeline-content">
+              <h4>Space Telescope Science Institute</h4>
+              <p>
+                I'm the main developer for a <mark>Ruby on Rails</mark> web app called <a href="https://viewspace.org">ViewSpace</a>. I help with the product owners and stakeholders to build out features and create workable solutions to their problems. I also semi-project manage the project with the product owner since there is no central project manager role. The web app uses <mark>Bootstrap 3</mark> to create all the views that are written in <mark>HAML</mark>. I use <mark>JavaScript</mark> and <mark>jQuery</mark> as well for most of the front end interactions, along with some <mark>CSS3</mark> transtitions to make the site snappy and snazzy. I'm also using <mark>capybara</mark> to write tests for my models, views, and overall functionality.
                 </p>
-              </div>
+            </div>
           </div>
           <div class="timeline-block">
             <div class="timeline-ico">
-              <i class="fa fa-briefcase"></i>
+              <FontAwesomeIcon icon="briefcase" />
             </div>
             <div class="timeline-header">
-              <h3>Windows Application Developer<br/><small>(as a consultant from Sogeti)</small></h3>
+              <h3>Informatica Developer/Tester <br /><small>(as a consultant from Sogeti)</small></h3>
+              <p>July 2017 - November 2017</p>
+            </div>
+            <div class="timeline-content">
+              <h4>T. Rowe Price</h4>
+              <p>
+                I rigorously test other
+                  <mark>Informatica</mark> Developers' mappings and workflows using hand written
+                  <mark>SQL</mark> scripts to make sure they followed the technical specifications as the client specified. I also
+          learned Informatica to create and run my own
+                  <mark>ETL</mark> mappings and workflows that complied with the technical specifications given by the client.
+                </p>
+            </div>
+          </div>
+          <div class="timeline-block">
+            <div class="timeline-ico">
+              <FontAwesomeIcon icon="briefcase" />
+            </div>
+            <div class="timeline-header">
+              <h3>Windows Application Developer<br /><small>(as a consultant from Sogeti)</small></h3>
               <p>May 2017 - July 2017</p>
             </div>
             <div class="timeline-content">
@@ -71,10 +77,10 @@ const ResumeSection = () => (
           </div>
           <div class="timeline-block">
             <div class="timeline-ico">
-              <i class="fa fa-briefcase"></i>
+              <FontAwesomeIcon icon="briefcase" />
             </div>
             <div class="timeline-header">
-              <h3>Web Developer<br/><small>(as a consultant from Sogeti)</small></h3>
+              <h3>Web Developer<br /><small>(as a consultant from Sogeti)</small></h3>
               <p>June 2015 - May 2017</p>
             </div>
             <div class="timeline-content">
@@ -95,7 +101,7 @@ const ResumeSection = () => (
           </div>
           <div class="timeline-block">
             <div class="timeline-ico">
-              <i class="fa fa-briefcase"></i>
+              <FontAwesomeIcon icon="briefcase" />
             </div>
             <div class="timeline-header">
               <h3>Front-end Developer</h3>
@@ -114,7 +120,7 @@ const ResumeSection = () => (
           </div>
           <div class="timeline-block">
             <div class="timeline-ico">
-              <i class="fa fa-briefcase"></i>
+              <FontAwesomeIcon icon="briefcase" />
             </div>
             <div class="timeline-header">
               <h3>Web Developer</h3>
@@ -134,7 +140,7 @@ const ResumeSection = () => (
           </div>
           <div class="timeline-block">
             <div class="timeline-ico">
-              <i class="fa fa-briefcase"></i>
+              <FontAwesomeIcon icon="briefcase" />
             </div>
             <div class="timeline-header">
               <h3>Web Developer</h3>
@@ -163,7 +169,7 @@ const ResumeSection = () => (
         <div class="timeline-wrap">
           <div class="timeline-block">
             <div class="timeline-ico">
-              <i class="fa fa-graduation-cap"></i>
+              <FontAwesomeIcon icon="briefcase" />
             </div>
             <div class="timeline-header">
               <h3>Bachelor Degree</h3>
@@ -173,7 +179,7 @@ const ResumeSection = () => (
               <h4>University of Maryland, Baltimore County</h4>
               <p>Majored in Information Systems, which is a program that is based around the whole ecosphere that comprises
                 IT. Took programming to economic courses, even a few business ones too. It prepares students to do anything
-                from development to network administration to project management. <br/> I also minored in Computer Science
+                from development to network administration to project management. <br /> I also minored in Computer Science
                 because my true love in IT is programming.</p>
             </div>
           </div>
