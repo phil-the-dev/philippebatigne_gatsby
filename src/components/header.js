@@ -1,6 +1,7 @@
 import { Link } from "gatsby"
 import PropTypes from "prop-types"
 import React from "react"
+import Menu from './menu'
 
 const Header = ({ siteTitle }) => (
   // <header
@@ -34,7 +35,7 @@ const Header = ({ siteTitle }) => (
     <div className="row">
 
       <div class="top-bar">
-        <a class="menu-toggle" href="#"><span>Menu</span></a>
+        <a class="menu-toggle" href="#" onClick={() => { }}><span>Menu</span></a>
 
         <div class="logo">
           <a href="index.html">Home</a>
