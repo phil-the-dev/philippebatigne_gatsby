@@ -30,7 +30,7 @@
     "react-helmet": "^5.2.0",
     "react-magnific-popup": "^1.0.1",
     "react-masonry-component": "^6.2.1",
-    "react-slide-toggle": "^0.2.5"
+    "react-slidedown": "^2.0.9"
   },
   "devDependencies": {
     "prettier": "^1.16.4"
