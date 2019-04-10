@@ -88,22 +88,6 @@
 
 	});
 
-
-	/*---------------------------------------------------- */
-	/*	Masonry
-	------------------------------------------------------ */
-	var containerProjects = $('#folio-wrapper');
-
-	containerProjects.imagesLoaded(function () {
-
-		containerProjects.masonry({
-			itemSelector: '.folio-item',
-			resize: true
-		});
-
-	});
-
-
 	/*----------------------------------------------------*/
 	/*	Modal Popup
 	------------------------------------------------------*/
