@@ -1,6 +1,7 @@
 import React from 'react'
 import { SlideDown } from 'react-slidedown'
 import 'react-slidedown/lib/slidedown.css'
+import AnchorLink from 'react-anchor-link-smooth-scroll'
 
 export default class Menu extends React.Component {
   constructor(props) {
@@ -29,12 +30,14 @@ export default class Menu extends React.Component {
           <nav id="main-nav-wrap">
             <SlideDown className={'my-dropdown-slidedown'} closed={!this.state.isClicked}>
               <ul className="main-navigation">
-                <li className="current"><a className="smoothscroll" href="#intro" title="">Home</a></li>
-                <li><a className="smoothscroll" href="#about" title="">About</a></li>
-                <li><a className="smoothscroll" href="#services" title="">Why Me?</a></li>
-                <li><a className="smoothscroll" href="#resume" title="">Resume</a></li>
-                <li><a className="smoothscroll" href="#portfolio" title="">Portfolio</a></li>
-                <li><a className="smoothscroll" href="#contact" title="">Contact</a></li>
+                <li className="current">
+                  <AnchorLink href='#intro'>Home</AnchorLink>
+                </li>
+                <li><AnchorLink href='#about'>About</AnchorLink></li>
+                <li><AnchorLink href='#services'>Why Me?</AnchorLink></li>
+                <li><AnchorLink href='#resume'>Resume</AnchorLink></li>
+                <li><AnchorLink href='#portfolio'>Portfolio</AnchorLink></li>
+                <li><AnchorLink href='#contact'>Contact</AnchorLink></li>
               </ul>
             </SlideDown>
           </nav>
