@@ -36,6 +36,11 @@ exports.onCreateWebpackConfig = ({
       plugins.define({
         __DEVELOPMENT__: stage === `develop` || stage === `develop-html`,
       }),
+      new webpack.ProvidePlugin({
+        $: 'jquery',
+        jQuery: 'jquery',
+        'window.jQuery': 'jquery'
+      }),
     ],
     externals: {
       jquery: 'jQuery', // important: 'Q' capitalized

@@ -27,11 +27,9 @@
         line-height: 0;
         height: 0;
       }
-      display: none;
       position: relative;
       -webkit-transform: translate3d(0px, 0px, 0px);
     }
-    display: none;
     position: relative;
     width: 100%;
     -ms-touch-action: pan-y;
@@ -65,6 +63,14 @@
   /* fix */
   
   .owl-carousel {
+    .disabled {
+      display: none;
+    }
+    .owl-nav {
+      & .owl-prev, & .owl-next{
+        cursor: pointer;
+      }
+    }
     .owl-wrapper, .owl-item {
       -webkit-backface-visibility: hidden;
       -moz-backface-visibility: hidden;
