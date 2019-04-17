@@ -6,64 +6,64 @@ library.add(faBriefcase);
 library.add(faGraduationCap);
 
 const ResumeSection = () => (
-  <section id="resume" class="grey-section">
-    <div class="row section-intro">
-      <div class="col-twelve">
+  <section id="resume" className="grey-section">
+    <div className="row section-intro">
+      <div className="col-twelve">
         <h5>Resume</h5>
         <h1>More of my credentials.</h1>
-        <p class="lead"></p>
+        <p className="lead"></p>
       </div>
     </div>
-    <div class="row resume-timeline">
-      <div class="col-twelve resume-header">
+    <div className="row resume-timeline">
+      <div className="col-twelve resume-header">
         <h2>Work Experience</h2>
       </div>
-      <div class="col-twelve">
-        <div class="timeline-wrap">
-          <div class="timeline-block">
-            <div class="timeline-ico">
-              <i class="fa fa-briefcase"></i>
+      <div className="col-twelve">
+        <div className="timeline-wrap">
+          <div className="timeline-block">
+            <div className="timeline-ico">
+              <i className="fa fa-briefcase"></i>
               <FontAwesomeIcon icon="briefcase" />
             </div>
-            <div class="timeline-header">
+            <div className="timeline-header">
               <h3>Ruby on Rails Developer</h3>
               <p>November 2017 - present</p>
             </div>
-            <div class="timeline-content">
+            <div className="timeline-content">
               <h4>Space Telescope Science Institute</h4>
               <p>
                 I'm the main developer for a <mark>Ruby on Rails</mark> web app called <a href="https://viewspace.org">ViewSpace</a>. I help with the product owners and stakeholders to build out features and create workable solutions to their problems. I also semi-project manage the project with the product owner since there is no central project manager role. The web app uses <mark>Bootstrap 3</mark> to create all the views that are written in <mark>HAML</mark>. I use <mark>JavaScript</mark> and <mark>jQuery</mark> as well for most of the front end interactions, along with some <mark>CSS3</mark> transtitions to make the site snappy and snazzy. I'm also using <mark>capybara</mark> to write tests for my models, views, and overall functionality.
                 </p>
             </div>
           </div>
-          <div class="timeline-block">
-            <div class="timeline-ico">
+          <div className="timeline-block">
+            <div className="timeline-ico">
               <FontAwesomeIcon icon="briefcase" />
             </div>
-            <div class="timeline-header">
+            <div className="timeline-header">
               <h3>Informatica Developer/Tester <br /><small>(as a consultant from Sogeti)</small></h3>
               <p>July 2017 - November 2017</p>
             </div>
-            <div class="timeline-content">
+            <div className="timeline-content">
               <h4>T. Rowe Price</h4>
               <p>
                 I rigorously test other
                   <mark>Informatica</mark> Developers' mappings and workflows using hand written
                   <mark>SQL</mark> scripts to make sure they followed the technical specifications as the client specified. I also
-          learned Informatica to create and run my own
+        learned Informatica to create and run my own
                   <mark>ETL</mark> mappings and workflows that complied with the technical specifications given by the client.
                 </p>
             </div>
           </div>
-          <div class="timeline-block">
-            <div class="timeline-ico">
+          <div className="timeline-block">
+            <div className="timeline-ico">
               <FontAwesomeIcon icon="briefcase" />
             </div>
-            <div class="timeline-header">
+            <div className="timeline-header">
               <h3>Windows Application Developer<br /><small>(as a consultant from Sogeti)</small></h3>
               <p>May 2017 - July 2017</p>
             </div>
-            <div class="timeline-content">
+            <div className="timeline-content">
               <h4>Procter & Gamble</h4>
               <p>
                 I created small
@@ -75,15 +75,15 @@ const ResumeSection = () => (
               </p>
             </div>
           </div>
-          <div class="timeline-block">
-            <div class="timeline-ico">
+          <div className="timeline-block">
+            <div className="timeline-ico">
               <FontAwesomeIcon icon="briefcase" />
             </div>
-            <div class="timeline-header">
+            <div className="timeline-header">
               <h3>Web Developer<br /><small>(as a consultant from Sogeti)</small></h3>
               <p>June 2015 - May 2017</p>
             </div>
-            <div class="timeline-content">
+            <div className="timeline-content">
               <h4>ConnectYourCare</h4>
               <p>
                 I worked on their massive healthcare portal implementing client requested features, building out new functionality, and tackling
@@ -99,15 +99,15 @@ const ResumeSection = () => (
               </p>
             </div>
           </div>
-          <div class="timeline-block">
-            <div class="timeline-ico">
+          <div className="timeline-block">
+            <div className="timeline-ico">
               <FontAwesomeIcon icon="briefcase" />
             </div>
-            <div class="timeline-header">
+            <div className="timeline-header">
               <h3>Front-end Developer</h3>
               <p>April 2014 - June 2015</p>
             </div>
-            <div class="timeline-content">
+            <div className="timeline-content">
               <h4>Decision Software Inc</h4>
               <p>
                 I was brought on to implement their first set of web apps to allow clients to access our databases. I used a standard
@@ -118,15 +118,15 @@ const ResumeSection = () => (
               </p>
             </div>
           </div>
-          <div class="timeline-block">
-            <div class="timeline-ico">
+          <div className="timeline-block">
+            <div className="timeline-ico">
               <FontAwesomeIcon icon="briefcase" />
             </div>
-            <div class="timeline-header">
+            <div className="timeline-header">
               <h3>Web Developer</h3>
               <p>June 2013 – March 2014</p>
             </div>
-            <div class="timeline-content">
+            <div className="timeline-content">
               <h4>StrongDigital <small>(formerly DevelopDC)</small></h4>
               <p>
                 Small tech startup firm that worked on anything that a client wanted. Worked on standard marking websites to
@@ -138,15 +138,15 @@ const ResumeSection = () => (
               </p>
             </div>
           </div>
-          <div class="timeline-block">
-            <div class="timeline-ico">
+          <div className="timeline-block">
+            <div className="timeline-ico">
               <FontAwesomeIcon icon="briefcase" />
             </div>
-            <div class="timeline-header">
+            <div className="timeline-header">
               <h3>Web Developer</h3>
               <p>Feburary 2012 - June 2013</p>
             </div>
-            <div class="timeline-content">
+            <div className="timeline-content">
               <h4>Fintrac Inc</h4>
               <p>
                 An agriculture solutions contractor for developing countries that brought me on to work on some in-house projects. Worked
@@ -161,21 +161,21 @@ const ResumeSection = () => (
         </div>
       </div>
     </div>
-    <div class="row resume-timeline">
-      <div class="col-twelve resume-header">
+    <div className="row resume-timeline">
+      <div className="col-twelve resume-header">
         <h2>Education</h2>
       </div>
-      <div class="col-twelve">
-        <div class="timeline-wrap">
-          <div class="timeline-block">
-            <div class="timeline-ico">
+      <div className="col-twelve">
+        <div className="timeline-wrap">
+          <div className="timeline-block">
+            <div className="timeline-ico">
               <FontAwesomeIcon icon="briefcase" />
             </div>
-            <div class="timeline-header">
+            <div className="timeline-header">
               <h3>Bachelor Degree</h3>
               <p>Sept 2009 - Dec 2011</p>
             </div>
-            <div class="timeline-content">
+            <div className="timeline-content">
               <h4>University of Maryland, Baltimore County</h4>
               <p>Majored in Information Systems, which is a program that is based around the whole ecosphere that comprises
                 IT. Took programming to economic courses, even a few business ones too. It prepares students to do anything
