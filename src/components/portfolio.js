@@ -42,7 +42,6 @@ export class FolioItem extends React.Component {
 
           <Dialog open={this.state.showDialog} onClose={() => this.toggleDialog()}>
             <div className="media">
-              {/* <img src="images/conkraken-top.png" alt="" /> */}
               <Img fluid={imgSrc} alt={imgAlt} />
             </div>
             <div className="description-box">
@@ -217,22 +216,6 @@ class Dialog extends React.Component {
 
   toggleDialog(props) {
     if (props.open) {
-      // $(this.refs.mfpRoot).magnificPopup({
-      //   items: {
-      //     src: $(this.refs.mfpRoot),
-      //     type: 'inline',
-      //   },
-      //   type: 'inline',
-      //   fixedContentPos: false,
-      //   removalDelay: 300,
-      //   showCloseBtn: false,
-      //   mainClass: 'mfp-fade',
-      //   callbacks: {
-      //     close: function () {
-      //       this.props.onClose();
-      //     }.bind(this)
-      //   }
-      // }).magnificPopup('open');
       $.magnificPopup.open({
         items: {
           src: $(this.refs.mfpRoot),
@@ -245,31 +228,6 @@ class Dialog extends React.Component {
       });
     } else {
       $.magnificPopup.close();
-      // $(this.refs.mfpRoot).magnificPopup().magnificPopup('close');
     }
   }
 }
-
-
-// export const listQuery = graphql`
-//   query ListQuery {
-//     allMarkdownRemark(sort: { order: DESC, fields: [frontmatter___title] }) {
-//       edges {
-//         node {
-//           frontmatter {
-//             title,
-//             image 
-//           }
-//         }
-//       }
-//     }
-//   }
-//   `
-
-  // {
-  //   childImageSharp {
-  //     fluid(maxWidth: 786) {
-  //       ...GatsbyImageSharpFluid
-  //     }
-  //   }
-  // }
