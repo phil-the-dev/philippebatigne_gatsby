@@ -1,5 +1,9 @@
 import React from "react"
 import ReactFitText from 'react-fittext'
+import { library } from '@fortawesome/fontawesome-svg-core'
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
+import { faChevronDown } from '@fortawesome/free-solid-svg-icons'
+library.add(faChevronDown);
 
 const Banner = () => (
   <section id="intro">
@@ -14,7 +18,10 @@ const Banner = () => (
           <p className="intro-position">
             <span>Full Stack Web Developer</span>
           </p>
-          <a className="button stroke smoothscroll" href="#about" title="">More About Me</a>
+          <a className="button stroke smoothscroll" href="#about" title="">
+            More About Me
+            <FontAwesomeIcon icon="chevron-down" className="buttonIcon" />
+          </a>
         </div>
       </div>
     </div>

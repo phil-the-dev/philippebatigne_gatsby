@@ -2530,11 +2530,8 @@
      &:hover, &:focus {
        border-color: #cc005f;
      }
-     &::after {
+     .buttonIcon {
        display: inline-block;
-       content: "\f107";
-       font-family: "Font Awesome 5 Free";
-       font-size: 1.6rem;
        line-height: inherit;
        text-align: center;
        position: relative;
