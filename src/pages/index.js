@@ -28,7 +28,7 @@ const IndexPage = () => (
     <ProgressSection />
     <ServicesSection />
     <ResumeSection />
-    <PortfolioSection />
+    {/* <PortfolioSection /> */}
     <ContactSection />
   </Layout>
 )
