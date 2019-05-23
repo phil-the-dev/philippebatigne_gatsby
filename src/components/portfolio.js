@@ -69,7 +69,11 @@ const PortfolioItems = () => (
   <StaticQuery
     query={graphql`
     query {
-      allMarkdownRemark(sort: { order: DESC, fields: [frontmatter___title] }) {
+      allMarkdownRemark(
+        sort: { order: DESC, 
+        fields: [frontmatter___title] },
+        filter: {fileAbsolutePath: {regex: "/(\/portfolio)/.*.md$/"}}
+      ) {
         edges {
           node {
             id,
