@@ -1,9 +1,5 @@
 import React from 'react';
-// import OwlCarousel from 'react-owl-carousel';
-// import 'owl.carousel/dist/assets/owl.carousel.css';
-// import 'owl.carousel/dist/assets/owl.theme.default.css';
 import OwlCarousel from 'react-owl-carousel2';
-// import 'react-owl-carousel2/style.css';
 
 const owlOptions = {
   nav: false,
@@ -21,8 +17,6 @@ const owlOptions = {
       nav: false
     }
   },
-
-
 
 }
 const ServicesSection = () => (
