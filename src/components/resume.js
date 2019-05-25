@@ -28,8 +28,10 @@ const Jobs = () => (
     query={graphql`
     query {
       allMarkdownRemark(
-        sort: { order: DESC, 
-        fields: [frontmatter___title] },
+        sort: { 
+          order: DESC , 
+          fields: [frontmatter___index] 
+        },
         filter: {fileAbsolutePath: {regex: "/(\/jobs)/.*.md$/"}}
       ) {
         edges {
