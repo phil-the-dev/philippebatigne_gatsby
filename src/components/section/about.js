@@ -1,5 +1,5 @@
 import React from "react"
-import profile_pic from '../assets/images/profile-pic.jpg';
+import profile_pic from '../../assets/images/profile-pic.jpg';
 
 const AboutSection = () => (
   <section id="about">

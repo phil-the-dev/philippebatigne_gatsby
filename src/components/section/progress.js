@@ -1,5 +1,5 @@
 import React from "react"
-import react_logo from '../assets/images/react.png';
+import react_logo from '../../assets/images/react.png';
 
 const ProgressSection = () => (
   <section id="cta" className="grey-section">
