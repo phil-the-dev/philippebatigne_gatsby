@@ -7,7 +7,7 @@ const ProgressSection = () => (
     <div className="row">
       <div className="col-six">
         <p className="lead">
-          <a href="https://facebook.github.io/react/" target="_blank"><img src={react_logo} alt="" style={{ height: `100px` }} /></a> <br />
+          <a href="https://facebook.github.io/react/" rel="noopener noreferrer" target="_blank"><img src={react_logo} alt="" style={{ height: `100px` }} /></a> <br />
           Currently learning React so I can decouple my Rails apps and separate client-side functionality, reduce server calls, speed up page loads, and create more efficient code.
         </p>
       </div>

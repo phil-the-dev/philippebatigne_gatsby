@@ -1,11 +1,8 @@
 import React from 'react';
-// import Swiper from 'react-id-swiper';
 import Swiper from 'react-id-swiper/lib/ReactIdSwiper.full';
-
 
 const params = {
   slidesPerView: 3,
-  // spaceBetween: 30,
   slidesPerGroup: 3,
   breakpoints: {
     699: {
@@ -65,9 +62,7 @@ const ServicesSection = () => (
           </div>
         </div>
       </Swiper>
-      {/* </div> */}
     </div>
-
   </section >
 )
 

@@ -8,7 +8,7 @@ const AboutSection = () => (
         <h5>About</h5>
         <h1>Let me introduce myself.</h1>
         <div className="intro-info">
-          <img src={profile_pic} alt="Profile Picture"></img>
+          <img src={profile_pic} alt="Profile" />
           <p className="lead">I'm a big nerd - I like Star trek, board games, and comics but my real passion is tech and development. I love how you can build products and solutions that can help people and causes. Build things that can have real actionable impacts in everyday life. Innovate on ideas that can take off and create whole ecosystems around it.</p>
         </div>
       </div>
