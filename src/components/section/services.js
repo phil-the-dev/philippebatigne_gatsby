@@ -2,24 +2,7 @@ import React from 'react';
 // import Swiper from 'react-id-swiper';
 import Swiper from 'react-id-swiper/lib/ReactIdSwiper.full';
 
-const owlOptions = {
-  nav: false,
-  responsive: {
-    0: {
-      items: 1,
-      nav: true,
-    },
-    700: {
-      items: 2,
-      nav: true
-    },
-    960: {
-      items: 3,
-      nav: false
-    }
-  },
 
-}
 const params = {
   slidesPerView: 3,
   // spaceBetween: 30,
@@ -34,11 +17,11 @@ const params = {
       slidesPerGroup: 2,
     },
   },
-  loopFillGroupWithBlank: false,
   navigation: {
     nextEl: '.swiper-button-next',
     prevEl: '.swiper-button-prev',
   },
+  loopFillGroupWithBlank: false,
   noSwiping: true,
 };
 
@@ -84,7 +67,7 @@ const ServicesSection = () => (
       </Swiper>
       {/* </div> */}
     </div>
-  
+
   </section >
 )
 
