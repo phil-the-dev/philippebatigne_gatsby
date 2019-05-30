@@ -48,7 +48,7 @@ const Jobs = () => (
       }
     }
   `}
-    render={data =>
+    render={data => 
       data.allMarkdownRemark.edges.map(function (element, index) {
         let item = element.node.frontmatter;
         return (<JobComponent

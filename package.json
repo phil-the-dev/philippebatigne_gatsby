@@ -31,9 +31,11 @@
     "react-dom": "^16.8.4",
     "react-fittext": "^1.0.0",
     "react-helmet": "^5.2.0",
+    "react-id-swiper": "^2.1.2",
     "react-masonry-component": "^6.2.1",
     "react-owl-carousel2": "^0.3.0",
-    "react-slidedown": "^2.0.9"
+    "react-slidedown": "^2.0.9",
+    "swiper": "^4.5.0"
   },
   "devDependencies": {
     "prettier": "^1.16.4"

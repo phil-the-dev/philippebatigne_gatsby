@@ -11,9 +11,9 @@ const Banner = () => (
     <div className="intro-content">
       <div className="row">
         <div className="col-twelve">
-          <ReactFitText>
+          {/* <ReactFitText> */}
             <h1>Hi, I'm Philippe Batigne.</h1>
-          </ReactFitText>
+          {/* </ReactFitText> */}
           <h5>pronounced "fill-leap" "bat-teen"</h5>
           <p className="intro-position">
             <span>Full Stack Web Developer</span>

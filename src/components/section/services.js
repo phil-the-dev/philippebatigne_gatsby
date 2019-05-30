@@ -1,5 +1,6 @@
 import React from 'react';
-import OwlCarousel from 'react-owl-carousel2';
+// import Swiper from 'react-id-swiper';
+import Swiper from 'react-id-swiper/lib/ReactIdSwiper.full';
 
 const owlOptions = {
   nav: false,
@@ -19,6 +20,28 @@ const owlOptions = {
   },
 
 }
+const params = {
+  slidesPerView: 3,
+  // spaceBetween: 30,
+  slidesPerGroup: 3,
+  breakpoints: {
+    699: {
+      slidesPerView: 1,
+      slidesPerGroup: 1,
+    },
+    959: {
+      slidesPerView: 2,
+      slidesPerGroup: 2,
+    },
+  },
+  loopFillGroupWithBlank: false,
+  navigation: {
+    nextEl: '.swiper-button-next',
+    prevEl: '.swiper-button-prev',
+  },
+  noSwiping: true,
+};
+
 const ServicesSection = () => (
   <section id="services">
     <div className="overlay"></div>
@@ -29,12 +52,8 @@ const ServicesSection = () => (
         <p className="lead"></p>
       </div>
     </div>
-    <div className="row services-content">
-      <OwlCarousel
-        id="owl-slider"
-        options={owlOptions}
-        className="owl-carousel services-list"
-        loop={false}>
+    <div className="row services-content services-list">
+      <Swiper {...params}>
         <div className="service">
           <span className="icon"><i className="icon-book"></i></span>
           <div className="service-content">
@@ -62,9 +81,10 @@ const ServicesSection = () => (
             </p>
           </div>
         </div>
-      </OwlCarousel>
+      </Swiper>
       {/* </div> */}
     </div>
+  
   </section >
 )
 

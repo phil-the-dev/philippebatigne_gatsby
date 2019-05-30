@@ -16,7 +16,7 @@ const ContactSection = () => (
         <form name="contactForm" id="contactForm" method="post" netlify="true">
           <fieldset>
             <div className="form-field">
-              <input name="contactName" type="text" id="contactName" placeholder="Name" minlength="2" required="" />
+              <input name="contactName" type="text" id="contactName" placeholder="Name" minLength="2" required="" />
             </div>
             <div className="form-field">
               <input name="contactEmail" type="email" id="contactEmail" placeholder="Email" required="" />

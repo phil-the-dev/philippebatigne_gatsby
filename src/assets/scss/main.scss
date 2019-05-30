@@ -3288,9 +3288,12 @@
  .services-list {
    margin-top: 1.2rem;
    text-align: center;
+   
    .service {
      margin-bottom: 1.2rem;
-     padding: 0 30px;
+     .desc {
+       padding: 0 40px;
+     }
    }
    .icon {
      display: inline-block;
