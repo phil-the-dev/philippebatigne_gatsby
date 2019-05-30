@@ -17,8 +17,8 @@ const JobComponent = (props) => (
     </div>
     <div className="timeline-content">
       <h4>{props.location}</h4>
-      <p dangerouslySetInnerHTML={{ __html: props.description }}>
-      </p>
+      <div dangerouslySetInnerHTML={{ __html: props.description }}>
+      </div>
     </div>
   </div>
 )
@@ -48,7 +48,7 @@ const Jobs = () => (
       }
     }
   `}
-    render={data => 
+    render={data =>
       data.allMarkdownRemark.edges.map(function (element, index) {
         let item = element.node.frontmatter;
         return (<JobComponent
