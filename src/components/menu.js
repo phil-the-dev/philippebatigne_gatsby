@@ -30,9 +30,9 @@ export default class Menu extends React.Component {
     return (
       <div className="row">
         <div className="top-bar">
-          <a className={menuToggleClass} href="#" onClick={(e) => this.menuClick(e)}>
+          <button className={menuToggleClass} href="#" onClick={(e) => this.menuClick(e)}>
             <span>Menu</span>
-          </a>
+          </button>
           <nav id="main-nav-wrap">
             <SlideDown className={'my-dropdown-slidedown'} closed={!this.state.isMenuOpen}>
               <ul className="main-navigation">

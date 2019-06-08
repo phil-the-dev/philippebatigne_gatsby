@@ -2293,6 +2293,11 @@
    margin-top: 13px;
    display: block;
    position: relative;
+   background-color: transparent;
+   padding: 1px 6px;
+   &:hover, &:focus {
+    background-color: transparent;     
+   }
    span {
      display: block;
      background-color: #FF0077;
