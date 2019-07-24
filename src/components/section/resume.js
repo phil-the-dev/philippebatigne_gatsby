@@ -108,7 +108,7 @@ export class ResumeSection extends React.Component {
           <div className="col-twelve">
             <div className="timeline-wrap">
               {jobs.map((job, index) => {
-                if (job["Title"] === undefined) return;
+                if (job["Title"] === undefined) return '';
 
                 const duration = job['Started On'] + "-" + (job['Finished On'] || "Present")
 
