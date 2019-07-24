@@ -1,9 +1,9 @@
 module.exports = {
   pathPrefix: `/assets/js`,
   siteMetadata: {
-    title: `Gatsby Default Starter`,
-    description: `Kick off your next, great Gatsby project with this default starter. This barebones starter ships with the main Gatsby configuration files you might need.`,
-    author: `@gatsbyjs`,
+    title: `PhilippeBatigne.com`,
+    description: `Homepage of Philippe Batigne.`,
+    author: `@phil_the_dev`,
   },
   plugins: [
     `gatsby-plugin-react-helmet`,
