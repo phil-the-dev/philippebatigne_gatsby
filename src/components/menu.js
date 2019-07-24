@@ -42,7 +42,6 @@ export default class Menu extends React.Component {
                 <li><AnchorLink onClick={() => this.linkClick()} href='#about'>About</AnchorLink></li>
                 <li><AnchorLink onClick={() => this.linkClick()} href='#services'>Why Me?</AnchorLink></li>
                 <li><AnchorLink onClick={() => this.linkClick()} href='#resume'>Resume</AnchorLink></li>
-                <li><AnchorLink onClick={() => this.linkClick()} href='#portfolio'>Portfolio</AnchorLink></li>
                 <li><AnchorLink onClick={() => this.linkClick()} href='#contact'>Contact</AnchorLink></li>
               </ul>
             </SlideDown>
