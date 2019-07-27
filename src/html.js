@@ -1,5 +1,9 @@
 import React from "react"
 import PropTypes from "prop-types"
+// https://github.com/FortAwesome/react-fontawesome/issues/134
+import { config } from '@fortawesome/fontawesome-svg-core';
+
+config.autoAddCss = false;
 
 export default function HTML(props) {
   return (
@@ -11,6 +15,8 @@ export default function HTML(props) {
           name="viewport"
           content="width=device-width, initial-scale=1, shrink-to-fit=no"
         />
+        {/* https://github.com/FortAwesome/react-fontawesome/issues/134 */}
+        <link rel='stylesheet' href='https://unpkg.com/@fortawesome/fontawesome-svg-core@1.2.17/styles.css' integrity='sha384-bM49M0p1PhqzW3LfkRUPZncLHInFknBRbB7S0jPGePYM+u7mLTBbwL0Pj/dQ7WqR' crossOrigin='anonymous' />
 
         {props.headComponents}
       </head>
