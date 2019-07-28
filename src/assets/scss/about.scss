@@ -12,3 +12,20 @@
     font-family: "poppins-regular", sans-serif;
   }
 }
+
+.gatsby-ribbon {
+  width: 100%;
+  background-color: rgb(102, 51, 153);
+  color: rgb(241, 222, 250);
+  text-align: center;
+
+  a {
+    color: rgb(241, 222, 250);
+    text-decoration: underline;
+
+    &:hover {
+      text-decoration: none;
+      color: white;
+    }
+  }
+}

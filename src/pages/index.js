@@ -9,11 +9,13 @@ import ServicesSection from "../components/section/services"
 import ResumeSection from "../components/section/resume"
 import ContactSection from "../components/section/contact"
 import '../assets/scss/philippebatigne.scss'
+import { Link } from "gatsby";
 
 const IndexPage = () => (
   <Layout>
     <SEO title="Home" keywords={[`gatsby`, `application`, `react`]} />
     <Banner />
+    <div className="gatsby-ribbon">HTML site proudly converted to <Link to="//www.gatsbyjs.org/">Gatsby</Link></div>
     <AboutSection />
     <ProgressSection />
     <ServicesSection />
