@@ -14,7 +14,7 @@ export default class Menu extends React.Component {
 
   menuClick(event) {
     this.setState(state => ({
-      isMenuOpen: !this.state.isMenuOpen
+      isMenuOpen: !state.isMenuOpen
     }))
     event.preventDefault();
   }
