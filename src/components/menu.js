@@ -34,7 +34,7 @@ export default class Menu extends React.Component {
             <span>Menu</span>
           </button>
           <nav id="main-nav-wrap">
-            <SlideDown className={'my-dropdown-slidedown'} closed={!this.state.isMenuOpen}>
+            <SlideDown className={'my-dropdown-slidedown closed'} closed={!this.state.isMenuOpen}>
               <ul className="main-navigation">
                 <li className="current">
                   <AnchorLink onClick={() => this.linkClick()} href='#intro'>Home</AnchorLink>
