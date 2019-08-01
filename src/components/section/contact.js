@@ -13,8 +13,11 @@ const ContactSection = () => (
     </div>
     <div className="row contact-form">
       <div className="col-twelve">
-        <form name="contactForm" id="contactForm" method="post" netlify="true">
+        <form name="contactForm" id="contactForm" method="post" netlify-honeypot="bot-field" netlify="true">
           <fieldset>
+            <div style={{ display: 'none' }}>
+              <label>Don’t fill this out if you're human: <input name="bot-field" /></label>
+            </div>
             <div className="form-field">
               <input name="contactName" type="text" id="contactName" placeholder="Name" minLength="2" required="" />
             </div>
