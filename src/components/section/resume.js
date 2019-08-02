@@ -58,12 +58,9 @@ const JobDescription = ({ description }) => {
     'Wordpress',
   ]
 
-
-
   buzz_words.forEach((buzz_word) => {
     buzzed_description = buzzed_description.replace(buzz_word, `<mark>${buzz_word}</mark>`)
   })
-
 
   return (
     <div dangerouslySetInnerHTML={{ __html: buzzed_description }}>
@@ -80,6 +77,7 @@ export class ResumeSection extends React.Component {
 
   componentDidMount() {
     const parent = this;
+    // Since LinkedIn's API doesn't really allow for this kind of data retrieval, I have to do an export where I save it to a gist
     const jobs_csv_url = `https://gist.githubusercontent.com/phil-the-dev/412136820defcdb87781f48005498524/raw/jobs.csv`
     Papa.parse(jobs_csv_url, {
       download: true,
@@ -92,13 +90,18 @@ export class ResumeSection extends React.Component {
 
   render() {
     const jobs = this.state.jobs;
+    const code_permalink = 'https://github.com/phil-the-dev/philippebatigne_gatsby/blob/ff36d41a7c190e65b171d83dcee0017871c5789b/src/components/section/resume.js#L83'
     return (
       <section id="resume" className="grey-section">
         <div className="row section-intro">
           <div className="col-twelve">
             <h5>Resume</h5>
             <h1>More of my credentials.</h1>
-            <p className="lead"></p>
+            <p className="lead">
+              <em>
+                As pulled from my LinkedIn to keep all data consistent. Using LinkedIn's CSV export feature, you can see how I do it here: <a href={code_permalink} target="_blank">permalink to beginning of code chunk</a>
+              </em>
+            </p>
           </div>
         </div>
         <div className="row resume-timeline">
